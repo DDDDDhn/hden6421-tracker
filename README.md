@@ -8,3 +8,10 @@ So I start with achieve other functions like add anime characters with their nam
 
 ![version1](MDimages/V1.png)
 
+Because now I want to test whether I can successfully add the detailed information of an anime character, so I first default all data models to text field as a test.
+
+When I entered text into the form to add anime characters as a test, I saw it succeed.
+
+![version1](MDimages/V1test.png)
+
+In the next step, I will make the form pop-up and change some text fields to drop-down.

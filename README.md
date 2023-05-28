@@ -15,3 +15,7 @@ When I entered text into the form to add anime characters as a test, I saw it su
 ![version1](MDimages/V1test.png)
 
 In the next step, I will make the form pop-up and change some text fields to drop-down.
+
+# Version2
+
+Now I have changed the add character form to the popup page, users can use this pop up form top add new character.

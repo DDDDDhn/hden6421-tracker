@@ -1,61 +1,79 @@
-// Function to display the popup form
-function showPopupForm() {
-  var popup = document.getElementById('popup');
+// DOM elements
+const addCharacterBtn = document.getElementById('addCharacterBtn');
+const popup = document.getElementById('popup');
+const cancelBtn = document.getElementById('cancelBtn');
+const popupForm = document.getElementById('popupForm');
+const characterList = document.getElementById('characterList');
+
+// Show popup form
+addCharacterBtn.addEventListener('click', () => {
   popup.style.display = 'block';
-}
-
-// Function to hide the popup form
-function hidePopupForm() {
-  var popup = document.getElementById('popup');
-  popup.style.display = 'none';
-}
-
-// Function to add a character
-function addCharacter() {
-  var name = document.getElementById('name').value;
-  var anime = document.getElementById('anime').value;
-  var hairColor = document.getElementById('hairColor').value;
-  var eyeColor = document.getElementById('eyeColor').value;
-  var personality = document.getElementById('personality').value;
-  var race = document.getElementById('race').value;
-  var occupation = document.getElementById('occupation').value;
-
-  // Create a character card
-  var characterCard = document.createElement('div');
-  characterCard.classList.add('character-card');
-
-  // Fill the character card with information
-  characterCard.innerHTML = `
-    <h2>${name}</h2>
-    <p><strong>Anime:</strong> ${anime}</p>
-    <p><strong>Hair Color:</strong> ${hairColor}</p>
-    <p><strong>Eye Color:</strong> ${eyeColor}</p>
-    <p><strong>Personality:</strong> ${personality}</p>
-    <p><strong>Race:</strong> ${race}</p>
-    <p><strong>Occupation:</strong> ${occupation}</p>
-  `;
-
-  // Add the character card to the character list
-  var characterList = document.getElementById('characterList');
-  characterList.appendChild(characterCard);
-
-  // Clear the form values
-  document.getElementById('name').value = '';
-  document.getElementById('anime').value = '';
-  document.getElementById('hairColor').value = 'black'; // Set default value to black
-  document.getElementById('eyeColor').value = '';
-  document.getElementById('personality').value = '';
-  document.getElementById('race').value = '';
-  document.getElementById('occupation').value = '';
-
-  // Hide the popup form
-  hidePopupForm();
-}
-
-// Add event listeners
-document.getElementById('addCharacterBtn').addEventListener('click', showPopupForm);
-document.getElementById('popupForm').addEventListener('submit', function(e) {
-  e.preventDefault(); // Prevent form submission
-  addCharacter();
 });
-document.getElementById('cancelBtn').addEventListener('click', hidePopupForm);
+
+// Hide popup form
+cancelBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+// Handle form submission
+popupForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission
+
+  // Get form values
+  const characterName = document.getElementById('characterName').value;
+  const animeName = document.getElementById('animeName').value;
+  const hairColor = document.getElementById('hairColor').value;
+  const eyeColor = document.getElementById('eyeColor').value;
+  const gender = document.getElementById('gender').value;
+  const personalityFeatures = getSelectedCheckboxes('personality');
+  const race = document.getElementById('race').value;
+  const occupation = document.getElementById('occupation').value;
+
+  // Create character object
+  const character = {
+    characterName,
+    animeName,
+    hairColor,
+    eyeColor,
+    gender,
+    personalityFeatures,
+    race,
+    occupation
+  };
+
+  // Add character to the list
+  addCharacter(character);
+
+  // Reset form
+  popupForm.reset();
+
+  // Hide popup form
+  popup.style.display = 'none';
+});
+
+// Helper function to get selected checkboxes
+function getSelectedCheckboxes(name) {
+  const checkboxes = document.querySelectorAll(`input[name=${name}]:checked`);
+  const values = [];
+  checkboxes.forEach((checkbox) => {
+    values.push(checkbox.value);
+  });
+  return values;
+}
+
+// Function to add character to the list
+function addCharacter(character) {
+  const characterItem = document.createElement('div');
+  characterItem.classList.add('character-item');
+  characterItem.innerHTML = `
+    <h3>${character.characterName}</h3>
+    <p>Anime: ${character.animeName}</p>
+    <p>Hair Color: ${character.hairColor}</p>
+    <p>Eye Color: ${character.eyeColor}</p>
+    <p>Gender: ${character.gender}</p>
+    <p>Personality Features: ${character.personalityFeatures.join(', ')}</p>
+    <p>Race: ${character.race}</p>
+    <p>Occupation: ${character.occupation}</p>
+  `;
+  characterList.appendChild(characterItem);
+}

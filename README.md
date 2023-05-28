@@ -43,3 +43,5 @@ There are mainly two reasons for setting such User Input. The first one is, even
 Features".
 
 The User Input method of other properties is basically the same as the previous Data Model, but I also got feedback from the tutor, saying that some dropdown select options are too many, and some simplifications can be made, such as some options can be replaced by "other".
+
+![version2Newpopup](MDimages/V2Newpopup.png)

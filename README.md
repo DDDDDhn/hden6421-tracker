@@ -18,4 +18,8 @@ In the next step, I will make the form pop-up and change some text fields to dro
 
 # Version2
 
-Now I have changed the add character form to the popup page, users can use this pop up form top add new character.
+Now I have changed the css to change the add anime character form to the popup page, users can use this pop up form top add new character.
+
+![version2](MDimages/V2popup.png)
+
+What I have to do now is to improve the data type of the add anime character form to what I wrote in the Data Model, and change some text fields to drop-down options.

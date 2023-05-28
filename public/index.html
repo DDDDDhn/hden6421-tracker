@@ -14,31 +14,90 @@
     <div id="popupContent">
       <h2>Add Character</h2>
       <form id="popupForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required><br>
+        <label for="characterName">Name of Character:</label>
+        <input type="text" id="characterName" required><br>
 
-        <label for="anime">Anime:</label>
-        <input type="text" id="anime" required><br>
+        <label for="animeName">Name of Anime:</label>
+        <input type="text" id="animeName" required><br>
 
         <label for="hairColor">Hair Color:</label>
         <select id="hairColor">
-          <option value="black">Black</option>
-          <option value="white">White</option>
+          <option value="orange">Orange</option>
           <option value="green">Green</option>
           <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
           <option value="red">Red</option>
           <option value="pink">Pink</option>
-          <option value="others">Others</option>
+          <option value="purple">Purple</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="other">Other</option>
         </select><br>
 
         <label for="eyeColor">Eye Color:</label>
-        <input type="text" id="eyeColor" required><br>
+        <select id="eyeColor">
+          <option value="orange">Orange</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="red">Red</option>
+          <option value="pink">Pink</option>
+          <option value="purple">Purple</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="other">Other</option>
+        </select><br>
 
-        <label for="personality">Personality:</label>
-        <input type="text" id="personality" required><br>
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transgender">Transgender</option>
+          <option value="cisgender">Cisgender</option>
+          <option value="non-binary">Non-binary</option>
+          <option value="agender">Agender</option>
+          <option value="gender non-conforming">Gender Non-conforming</option>
+          <option value="other">Other</option>
+        </select><br>
+
+        <label for="personality">Personality Features:</label><br>
+        <input type="checkbox" id="vigorous" value="vigorous">
+        <label for="vigorous">Vigorous</label><br>
+
+        <input type="checkbox" id="scheming" value="scheming">
+        <label for="scheming">Scheming</label><br>
+
+        <input type="checkbox" id="bossy" value="bossy">
+        <label for="bossy">Bossy</label><br>
+
+        <input type="checkbox" id="coldElegant" value="cold and elegant">
+        <label for="coldElegant">Cold and Elegant</label><br>
+
+        <input type="checkbox" id="lovely" value="lovely">
+        <label for="lovely">Lovely</label><br>
+
+        <input type="checkbox" id="corky" value="corky">
+        <label for="corky">Corky (Cute and Dorky)</label><br>
+
+        <input type="checkbox" id="depressed" value="depressed">
+        <label for="depressed">Depressed</label><br>
+
+        <input type="checkbox" id="yandere" value="yandere">
+        <label for="yandere">Yandere</label><br>
+
+        <input type="checkbox" id="otherPersonality" value="other">
+        <label for="otherPersonality">Other</label><br>
 
         <label for="race">Race:</label>
-        <input type="text" id="race" required><br>
+        <select id="race">
+          <option value="human">Human</option>
+          <option value="elves">Elves</option>
+          <option value="gods">Gods</option>
+          <option value="orcs">Orcs</option>
+          <option value="animal">Animal</option>
+          <option value="cyborg">Cyborg</option>
+          <option value="other">Other</option>
+        </select><br>
 
         <label for="occupation">Occupation:</label>
         <input type="text" id="occupation" required><br>

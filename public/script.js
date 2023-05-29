@@ -96,7 +96,7 @@ function addCharacter(character) {
   characterItem.classList.add('character-item');
   characterItem.innerHTML = `
     <h3>${character.characterName}</h3>
-    <p>ID: ${character.id}</p>
+    <p class="id half-size smaller">ID: ${character.id}</p>
     <p>Anime: ${character.animeName}</p>
     <p>Hair Color: ${character.hairColor}</p>
     <p>Eye Color: ${character.eyeColor}</p>
@@ -104,7 +104,8 @@ function addCharacter(character) {
     <p>Personality Features: ${character.personalityFeatures.join(', ')}</p>
     <p>Race: ${character.race}</p>
     <p>Occupation: ${character.occupation}</p>
-    <p>Date Added: ${character.date}</p>
+    <p class="date half-size smaller">Date Added: ${character.date}</p>
   `;
   characterList.appendChild(characterItem);
 }
+

@@ -29,8 +29,15 @@ popupForm.addEventListener('submit', (event) => {
   const race = document.getElementById('race').value;
   const occupation = document.getElementById('occupation').value;
 
+  // Generate unique ID
+  const id = generateID();
+
+  // Generate current date and time
+  const date = getCurrentDate();
+
   // Create character object
   const character = {
+    id,
     characterName,
     animeName,
     hairColor,
@@ -38,7 +45,8 @@ popupForm.addEventListener('submit', (event) => {
     gender,
     personalityFeatures,
     race,
-    occupation
+    occupation,
+    date
   };
 
   // Add character to the list
@@ -61,12 +69,34 @@ function getSelectedCheckboxes(name) {
   return values;
 }
 
+// Function to generate unique ID
+function generateID() {
+  const timestamp = new Date().getTime().toString();
+  const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+  return timestamp + random;
+}
+
+// Function to generate current date and time
+function getCurrentDate() {
+  const now = new Date();
+  const options = {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+  };
+  return now.toLocaleDateString('en-US', options);
+}
+
 // Function to add character to the list
 function addCharacter(character) {
   const characterItem = document.createElement('div');
   characterItem.classList.add('character-item');
   characterItem.innerHTML = `
     <h3>${character.characterName}</h3>
+    <p>ID: ${character.id}</p>
     <p>Anime: ${character.animeName}</p>
     <p>Hair Color: ${character.hairColor}</p>
     <p>Eye Color: ${character.eyeColor}</p>
@@ -74,6 +104,7 @@ function addCharacter(character) {
     <p>Personality Features: ${character.personalityFeatures.join(', ')}</p>
     <p>Race: ${character.race}</p>
     <p>Occupation: ${character.occupation}</p>
+    <p>Date Added: ${character.date}</p>
   `;
   characterList.appendChild(characterItem);
 }

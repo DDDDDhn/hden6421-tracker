@@ -28,6 +28,7 @@ In the next step, I will make the form pop-up and change some text fields to dro
 
 # Version2
 
+## Version2.1
 Now I have changed the css to change the add anime character form to the popup page, users can use this pop up form top add new character.
 
 ![version2](MDimages/V2popup.png)
@@ -45,3 +46,8 @@ Features".
 The User Input method of other properties is basically the same as the previous Data Model, but I also got feedback from the tutor, saying that some dropdown select options are too many, and some simplifications can be made, such as some options can be replaced by "other".
 
 ![version2Newpopup](MDimages/V2Newpopup.png)
+
+## Version2.2
+I had realized that I forgot to add the ID and Date properties to the new added anime character, so I have added the ID and Date properties to make it complete.
+
+![version2.2](MDimages/IDandDate.png)

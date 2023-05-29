@@ -51,3 +51,7 @@ The User Input method of other properties is basically the same as the previous 
 I had realized that I forgot to add the ID and Date properties to the new added anime character, so I have added the ID and Date properties to make it complete.
 
 ![version2.2](MDimages/IDandDate.png)
+I feel that the ID and Date properties are too conspicuous, and I want to make them smaller.
+![version2.2](MDimages/smallerIDDate.png)
+
+# Version3

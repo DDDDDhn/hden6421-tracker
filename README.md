@@ -55,3 +55,8 @@ I feel that the ID and Date properties are too conspicuous, and I want to make t
 ![version2.2](MDimages/smallerIDDate.png)
 
 # Version3
+
+Now I had completed the basic functions of adding new anime characters, the next step is to make the layout looks more beautiful.
+
+This is the mockup that I designed in the Web App Design assignmenmt, but because I'm not going to achieve the function of upload images of character, the layout would be different.
+![previousLayout](MDimages/1layout.png)

@@ -7,9 +7,8 @@
 <body>
   <h1>Anime Character Collection</h1>
   <button id="addCharacterBtn">Add Character</button>
-  <div id="characterList"></div>
+  <div id="characterList" class="character-list"></div>
 
-  <!-- Popup form -->
   <div id="popup">
     <div id="popupContent">
       <h2>Add Character</h2>
@@ -76,34 +75,26 @@
         <input type="checkbox" id="lovely" value="lovely">
         <label for="lovely">Lovely</label><br>
 
-        <input type="checkbox" id="corky" value="corky">
-        <label for="corky">Corky (Cute and Dorky)</label><br>
+        <input type="checkbox" id="mischievous" value="mischievous">
+        <label for="mischievous">Mischievous</label><br>
 
-        <input type="checkbox" id="depressed" value="depressed">
-        <label for="depressed">Depressed</label><br>
+        <input type="checkbox" id="brave" value="brave">
+        <label for="brave">Brave</label><br>
 
-        <input type="checkbox" id="yandere" value="yandere">
-        <label for="yandere">Yandere</label><br>
+        <input type="checkbox" id="smart" value="smart">
+        <label for="smart">Smart</label><br>
 
         <input type="checkbox" id="otherPersonality" value="other">
         <label for="otherPersonality">Other</label><br>
 
         <label for="race">Race:</label>
-        <select id="race">
-          <option value="human">Human</option>
-          <option value="elves">Elves</option>
-          <option value="gods">Gods</option>
-          <option value="orcs">Orcs</option>
-          <option value="animal">Animal</option>
-          <option value="cyborg">Cyborg</option>
-          <option value="other">Other</option>
-        </select><br>
+        <input type="text" id="race"><br>
 
         <label for="occupation">Occupation:</label>
-        <input type="text" id="occupation" required><br>
+        <input type="text" id="occupation"><br>
 
         <button type="submit">Add</button>
-        <button type="button" id="cancelBtn">Cancel</button>
+        <button id="cancelBtn">Cancel</button>
       </form>
     </div>
   </div>

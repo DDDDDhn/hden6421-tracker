@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Anime Character Collection</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <h1>Anime Character Collection</h1>
   <button id="addCharacterBtn">Add Character</button>
@@ -88,7 +90,16 @@
         <label for="otherPersonality">Other</label><br>
 
         <label for="race">Race:</label>
-        <input type="text" id="race"><br>
+        <select id="race">
+          <option value="Human">Human</option>
+          <option value="Elves">Elves</option>
+          <option value="Gods">Gods</option>
+          <option value="Orcs">Orcs</option>
+          <option value="Animal">Animal</option>
+          <option value="Cyborg">Cyborg</option>
+          <option value="Other">Other</option>
+        </select><br>
+
 
         <label for="occupation">Occupation:</label>
         <input type="text" id="occupation"><br>
@@ -101,4 +112,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

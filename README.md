@@ -60,3 +60,9 @@ Now I had completed the basic functions of adding new anime characters, the next
 
 This is the mockup that I designed in the Web App Design assignmenmt, but because I'm not going to achieve the function of upload images of character, the layout would be different.
 ![previousLayout](MDimages/1layout.png)
+
+When users add more anime characters to the website, the display on home page would look like this so far.
+![Version3](MDimages/V3.png)
+The next step is to make the display on the home page looks more beautiful, and change the add new character button to the side.
+
+# Version4

@@ -6,14 +6,27 @@ body {
 .navbar {
   background-color: pink;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar h1 {
   margin: 0;
   color: white;
   font-size: 24px;
-  text-align: center;
 }
+
+.navbar button {
+  background-color: #f9a3a3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 
 .character-card {

@@ -69,3 +69,4 @@ The next step is to make the display on the home page looks more beautiful, and 
 ![Version4](MDimages/V4Button.png)
 I had moved the button to the left side, but I realised that if I'm not going to  achieve some functions of the navigation bar, why can't I move the button of add character to the navigation bar?
 # Version5
+Because I don't intend to achieve the previously designed function that users can upload their own avatars on the right side of the navigation bar, so the space on the right side of the navigation bar is vacant, which is just used to place the Add Character button.

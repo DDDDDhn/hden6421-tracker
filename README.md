@@ -68,3 +68,4 @@ The next step is to make the display on the home page looks more beautiful, and 
 # Version4
 ![Version4](MDimages/V4Button.png)
 I had moved the button to the left side, but I realised that if I'm not going to  achieve some functions of the navigation bar, why can't I move the button of add character to the navigation bar?
+# Version5

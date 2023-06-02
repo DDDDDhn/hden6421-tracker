@@ -71,3 +71,10 @@ I had moved the button to the left side, but I realised that if I'm not going to
 # Version5
 Because I don't intend to achieve the previously designed function that users can upload their own avatars on the right side of the navigation bar, so the space on the right side of the navigation bar is vacant, which is just used to place the Add Character button.
 ![Version5](MDimages/V5.png)
+The next step is to add the LOGO to the left side of the navigatin bar, but I meet some problmes to display the LOGO on the home page.
+
+When I run the code on the server by "http://localhost:8888/", the LOGO always can't be displayed on the website. At first I thought there is something wrong with the file path, and I tried many times to change the file path but it still didn't work.
+![Version5](MDimages/V5server.png)
+
+Then I tried to run the code on my local file, and the result is the LOGO displayed successfully. I guess it might be something wrong with the server.
+![Version5](MDimages/V5local.png)

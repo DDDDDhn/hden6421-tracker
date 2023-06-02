@@ -8,6 +8,10 @@ const app = express();
 app.use(express.static('public'));
 // Serve static files from the public folder
 
+
+// app.use(express.static('image'));
+
+
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html')
 })

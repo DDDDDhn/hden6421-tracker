@@ -165,3 +165,20 @@ body {
 
 
 
+/* Responsive styles */
+/* When the width of the screen is smaller that 590px, 
+the layout on the mobile will apply. 
+There will be only one chracter displayed on each row. */
+@media only screen and (max-width: 590px) {
+  body {
+    margin: 10px;
+  }
+
+  .character-list {
+    display: block;
+  }
+
+  .character-item {
+    width: 100%;
+  }
+}

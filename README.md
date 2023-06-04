@@ -82,3 +82,9 @@ Then I tried to run the code on my local file, and the result is the LOGO displa
 I tried to recall the things that I have done at the begining of this assignment. I remembered that I have set the server at the very begining, so I took a look at the server.js. Then I found out that  "app.use(express.static('public'));". I guess it might be because that I have only set the "public" folder to the server, and the server can't find the "image" or "logo.png" file. So I moved the image folder to the inside of public folder, and change the file path to "./image/logo.png". And it finally works!
 ![Version5](MDimages/V5withLOGO.png)
 ![Version5](MDimages/V5withLOGO2.png)
+
+# Version6
+I have added more styles to the home page, to make it more beautiful.
+![Version6](MDimages/V6Desktop.png)
+
+The next step is to add the responsive design, so the web could be displayed better on smaller screen.

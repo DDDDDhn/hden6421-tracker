@@ -74,9 +74,15 @@ body {
 }
 
 .character-item {
+  width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lightgreen;
 }
+
 
 .character-item h3 {
   font-size: 24px;

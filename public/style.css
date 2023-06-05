@@ -169,7 +169,7 @@ body {
 /* When the width of the screen is smaller that 590px, 
 the layout on the mobile will apply. 
 There will be only one chracter displayed on each row. */
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 600px) {
   body {
     margin: 10px;
   }
@@ -180,5 +180,28 @@ There will be only one chracter displayed on each row. */
 
   .character-item {
     width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .character-item h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  .character-item p {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .character-item .id,
+  .character-item .date {
+    font-size: 10px;
+  }
+
+  .character-item .small,
+  .character-item .smaller {
+    font-size: 8px;
   }
 }
+

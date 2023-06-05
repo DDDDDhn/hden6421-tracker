@@ -8,7 +8,21 @@ characters. So, I would like to further narrow down the content of anime related
 own unique anime character collection Gallery. At this time, more and more young people are watching anime, so I believe this
 tracking application will be useful.
 
+# Deployment procedures 
 
+To run this web application successfully, please follow these steps:
+
+1. Download all the files from GitHub, and import these files to VSCode. 
+2. Open Terminal, and type in "npm start" to run the code and to start the server.
+3. Open your browser, and visit "http://localhost:8888/".
+4. Now ypu should see the web application with a navigation bar. Try to click the "Add Character" button on the top right, and add some anime characters!
+5. When the width of your screen is bigger than 590px, the desktop layout will apply. When the the width of your screen is smaller than 590px, the mobile layout will apply.
+
+
+
+
+
+# Development Process:
 
 # Version1 
 
@@ -88,3 +102,5 @@ I have added more styles to the home page, to make it more beautiful.
 ![Version6](MDimages/V6Desktop.png)
 
 The next step is to add the responsive design, so the web could be displayed better on smaller screen.
+![Version6](MDimages/V6Mobile.png)
+When the width of the screen is smaller that 590px, the layout on the mobile will apply. There will be only one chracter displayed on each row.

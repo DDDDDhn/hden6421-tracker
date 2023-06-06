@@ -18,9 +18,17 @@ To run this web application successfully, please follow these steps:
 4. Now ypu should see the web application with a navigation bar. Try to click the "Add Character" button on the top right, and add some anime characters!
 5. When the width of your screen is bigger than 590px, the desktop layout will apply. When the the width of your screen is smaller than 590px, the mobile layout will apply.
 
+## Display
 
+### Desktop Layout
+#### No character added
+![DisplayDesktopNonAdded](MDimages/DisplayDesktopNonAdded.png)
 
+#### More than eight characters are added
+![DisplayDesktop8Added](MDimages/DisplayDesktop8Added.png)
+### Mobile Layout
 
+![DisplayMobile](MDimages/DisplayMobile.png)
 
 # Development Process:
 

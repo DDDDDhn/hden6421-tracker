@@ -112,3 +112,19 @@ I have added more styles to the home page, to make it more beautiful.
 The next step is to add the responsive design, so the web could be displayed better on smaller screen.
 ![Version6](MDimages/V6Mobile.png)
 When the width of the screen is smaller that 590px, the layout on the mobile will apply. There will be only one chracter displayed on each row.
+
+## Display
+
+### Desktop Layout
+#### No character added
+![DisplayDesktopNonAdded](MDimages/DisplayDesktopNonAdded.png)
+
+#### More than eight characters are added
+![DisplayDesktop8Added](MDimages/DisplayDesktop8Added.png)
+### Mobile Layout
+
+![DisplayMobile](MDimages/DisplayMobile.png)
+
+
+## END
+The last edition was made on 6th June, before the extended due date.
